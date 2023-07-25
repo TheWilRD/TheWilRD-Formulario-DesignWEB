@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap');
+body{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lugrasimo', cursive;
+    height: 800px;
+}
+/*Contenedor principal*/
+.contenedor-padre{
+    /*imagen*/
+    position: relative;
+    display: block;
+    background-image:url(../img/Fondo1.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    width: 400px;
+    height: 585px;
+    margin: 2% auto;
+    border-radius: 5%;
+    overflow: hidden;
+}
+/*Contenedor de todos los elementos*/
+.contenedor__hijo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 1% auto;
+    width: 400px;
+    height: 580px;
+    background:linear-gradient(60deg,#89216bab,#89216ba1,#89216B);
+    background-size:cover;
+    background-repeat: no-repeat; 
+    border: 2px #fff solid;
+    border-radius: 5%;
+    overflow: hidden;
+}
+/*logo form*/
+.contenedor-padre--img{
+    position: absolute;
+    display: block;
+    top: 30px;
+    left: 0;
+    right: 0;
+    margin:1% auto;
+    z-index: 1;
+    width: 200px;
+    height: 180px;
+    border: 2px #fff solid;
+    box-shadow: 1px 10px 30px 1px #89216B;
+    border-radius: 100%;
+}
+/*Contenedor Form*/
+.contenedor-form-content{
+    margin: 60% auto;
+}
+/*button enviar*/
+.contenedor__hijo--form--Enviar{
+    margin-top: 20%;
+   background-color: #89216B;
+    color: #fff;
+    width: 120px;
+    height: 60px;
+    line-height: 50px;
+    font-size: 1.2rem;
+    border-radius: 10%;
+    border: 2px  #fff solid;
+    transition: border 2s ease;
+}
+.contenedor__hijo--form--Enviar:hover{
+    border: 2px  #f014b2 solid;
+}
+/*Formulario*/
+.contenedor__hijo--form{
+    display: grid;
+    grid-gap: 20px;
+    place-items: center;
+
+}
+
+/*olvidaste la contraseña*/
+.contenedor__hijo--form--Enviar-a{
+    position: absolute;
+    z-index: 2;
+    bottom: 9px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+.contenedor__hijo--form--Enviar-a:active{
+    color: #fd07d8;
+}
+
+
+
+
+/*Nombre
+password
+los 2 botones
+*/
+
+.cotenedor__form--label-Nombre-input,
+.cotenedor__form--label-password-input
+{
+    border: 0;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    outline-style:none; 
+    background: none;
+   
+}
+::placeholder{
+    color: #fff;
+}
+
+/*SVG-Footer*/
+.Contenedor--header{
+    position: relative;
+}
+.svg--header{
+    position: absolute;
+}
